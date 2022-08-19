@@ -31,7 +31,9 @@ myGalleryDiv.addEventListener('click', onOpenModal);
 // closeModal.addEventListener('click', onCloseModal);
 // backdrop.addEventListener('click', onBackdropClick);
 
-
+const instance = basicLightbox.create(`
+    <img src="" width="800" height="600">
+`);
 // логика что будет делать
 function onOpenModal(event) {
   // запрещаем от браузера действия
@@ -40,10 +42,8 @@ function onOpenModal(event) {
   if (event.target.nodeName !== 'IMG') {
     return;
   }
-  const instance = basicLightbox.create(`
-    <img src="${event.target.dataset.source}" width="800" height="600">
-`);
-  // instance.element().querySelector('img').src = event.target.dataset.source;
+  
+  instance.element().querySelector('img').src = event.target.dataset.source;
   instance.show();
   
   myGalleryDiv.addEventListener('keydown', event => {
