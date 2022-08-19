@@ -53,39 +53,3 @@ function onOpenModal(event) {
   });
 }
 
-
-// function onCloseModal() {
-
-// }
-
-// function onBackdropClick(event) {
-//   if (event.currentTarget === event.target) {
-//     onCloseModal();
-//   }
-// }
-
-// const instance = basicLightbox.create(`
-//     <img width="800" height="600">
-// `);
-
-// function onOpenModal(event) {
-//   event.preventDefault();
-//   if (event.target.nodeName !== 'IMG') {
-//     return;
-//   }
-//   instance.element().querySelector('img').src = event.target.dataset.source;
-//   instance.show();
-
-// const refs = {
-//   openModal: document.querySelector('.gallery__image = "open-modal"'),
-//   closeModal: document.querySelector('.gallery__image = "close-modal"'),
-//   backdrop: document.querySelector('.gallery__item'),
-// }
-
-// refs.openModal.addEventListener('click', onOpenModal);
-// refs.closeModal.addEventListener('click', onCloseModal);
-// refs.backdrop.addEventListener('click', onBackdropClick);
-
-// const openModal = document.querySelector('.gallery = "open-modal"');
-// const closeModal = document.querySelector('.gallery__image = "close-modal"');
-// const backdrop = document.querySelector('.gallery__item');
