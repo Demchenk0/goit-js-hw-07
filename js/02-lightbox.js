@@ -26,6 +26,5 @@ const stGallery = allA.join('');
 // добавления наших li
 myGalleryUl.innerHTML = stGallery;
 
-
 var lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250,
 });
